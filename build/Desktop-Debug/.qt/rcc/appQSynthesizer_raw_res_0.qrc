@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="/qt/qml/QSynthesizer/">
+    <file alias="assets/svg/cube.svg">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/assets/svg/cube.svg</file>
+    <file alias="assets/svg/folder.svg">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/assets/svg/folder.svg</file>
+    <file alias="assets/svg/gear.svg">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/assets/svg/gear.svg</file>
+    <file alias="assets/svg/plus.svg">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/assets/svg/plus.svg</file>
+    <file alias="assets/svg/saw.svg">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/assets/svg/saw.svg</file>
+    <file alias="assets/svg/sine.svg">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/assets/svg/sine.svg</file>
+    <file alias="assets/svg/square.svg">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/assets/svg/square.svg</file>
+    <file alias="assets/fonts/boxicons.ttf">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/assets/fonts/boxicons.ttf</file>
+  </qresource>
+</RCC>
+

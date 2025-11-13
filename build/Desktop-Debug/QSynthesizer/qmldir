@@ -1,0 +1,6 @@
+module QSynthesizer
+typeinfo appQSynthesizer.qmltypes
+prefer :/qt/qml/QSynthesizer/
+Main 1.0 Main.qml
+depends QtQuick
+

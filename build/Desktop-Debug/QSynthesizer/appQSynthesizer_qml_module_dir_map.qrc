@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/QSynthesizer">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/QSynthesizer</file>
+
+  </qresource>
+</RCC>
