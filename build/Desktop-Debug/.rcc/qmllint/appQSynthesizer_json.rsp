@@ -10,5 +10,6 @@
 --resource
 /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.qt/rcc/appQSynthesizer_raw_res_0.qrc
 /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml
+/home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml
 --json
 /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/appQSynthesizer_qmllint.json

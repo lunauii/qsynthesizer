@@ -11,6 +11,7 @@ ApplicationWindow {
     title: "QSynthesizer"
 
     FontLoader { id: boxicons; source: "assets/fonts/boxicons.ttf" }
+    SystemPalette { id: sys; colorGroup: SystemPalette.Active }
 
     GridLayout {
         anchors.fill: parent
@@ -31,13 +32,13 @@ ApplicationWindow {
             Layout.columnSpan: 2
             Layout.fillWidth: true
             Layout.preferredHeight: 48
-            color: "#1A1111"
+            color: sys.base
             radius: 0
 
             Text {
                 text: "QSynthesizer"
                 anchors.centerIn: parent
-                color: "#f8d0d0"
+                color: sys.windowText
                 font.pixelSize: 20
                 font.bold: true
                 font.family: "Inter"
@@ -49,11 +50,11 @@ ApplicationWindow {
                 anchors.rightMargin: 12
                 anchors.verticalCenter: parent.verticalCenter
                 radius: 12
-                color: "#1A1111"
+                color: sys.base
                 Text {
                     text: "×"
                     anchors.centerIn: parent
-                    color: "#F0DDDC"
+                    color: sys.windowText
                     font.pixelSize: 32
                 }
                 MouseArea {
@@ -70,7 +71,7 @@ ApplicationWindow {
             Layout.column: 0
             Layout.fillHeight: true
             Layout.preferredWidth: 64
-            color: "#1A1111"
+            color: sys.base
             radius: 0
 
             ColumnLayout {
@@ -82,11 +83,11 @@ ApplicationWindow {
                 Rectangle {
                     Layout.alignment: Qt.AlignTop
                     width: 48; height: 48; radius: 12
-                    color: "#723331"
+                    color: sys.highlightedText
                     Text {
                         anchors.centerIn: parent
                         text: "+"
-                        color: "#FBD5D2"
+                        color: sys.windowText
                         font.pixelSize: 32
                     }
                     MouseArea {
@@ -96,14 +97,14 @@ ApplicationWindow {
                 }
                 Rectangle {
                     width: 48; height: 48; radius: 12
-                    color: "#1A1111"
+                    color: sys.base
                     Layout.alignment: Qt.AlignTop
                     Text {
                         anchors.centerIn: parent
                         font.pixelSize: 32
                         font.family: boxicons.font.family
                         text: "\uEDCB"
-                        color: "#D8C1C0"
+                        color: sys.windowText
                     }
                     MouseArea {
                         anchors.fill: parent
@@ -117,13 +118,13 @@ ApplicationWindow {
 
                 Rectangle {
                     width: 48; height: 48; radius: 12
-                    color: "#1A1111"
+                    color: sys.base
                     Layout.alignment: Qt.AlignBottom
                     Text {
                         anchors.centerIn: parent
                         font.family: boxicons.font.family
                         text: "\uED52"
-                        color: "#D8C1C0"
+                        color: sys.windowText
                         font.pixelSize: 32
                     }
                 }
@@ -140,7 +141,7 @@ ApplicationWindow {
             Layout.column: 1
             Layout.fillWidth: true
             Layout.fillHeight: true
-            color: "#231919"
+            color: sys.mid
             radius: 16
             antialiasing: true
             clip: true
@@ -155,17 +156,17 @@ ApplicationWindow {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
                     radius: 12
-                    color: "#231919"
+                    color: sys.mid
                     gradient: Gradient {
                         orientation: Gradient.Horizontal
-                        GradientStop { position: 0.0; color: "#00FFFFFF" }
-                        GradientStop { position: 1.0; color: "#13FFA09D" }
+                        GradientStop { position: 0.0; color: sys.mid }
+                        GradientStop { position: 1.0; color: sys.light }
                     }
 
                     Text {
                         anchors.centerIn: parent
                         text: "waveform or something"
-                        color: "#F0DDDC"
+                        color: sys.text
                     }
                 }
 
@@ -176,7 +177,7 @@ ApplicationWindow {
                         text: "\uED70"
                         font.pixelSize: 32
                         font.bold: true
-                        color: "#F0DDDC"
+                        color: sys.text
                     }
 
                     Text {
@@ -184,7 +185,7 @@ ApplicationWindow {
                         font.family: "Inter"
                         font.bold: true
                         font.pixelSize: 24
-                        color: "#F0DDDC"
+                        color: sys.text
                     }
                 }
 
@@ -197,7 +198,7 @@ ApplicationWindow {
                         id: sineButton
                         radius: 16
                         height: 32
-                        color: waveGroup.checkedButton === sineButton ? "#ECAAA7" : "#4C3837"
+                        color: sys.light
                         Layout.preferredWidth: 80
 
                         RowLayout {
@@ -210,7 +211,7 @@ ApplicationWindow {
                             Text {
                                 anchors.centerIn: parent
                                 text: "    Sine"
-                                color: waveGroup.checkedButton === sineButton ? "#2A1818" : "#F8D6D5"
+                                color: sys.text
                                 font.pixelSize: 16
                                 font.family: "Inter"
                             }
@@ -227,7 +228,7 @@ ApplicationWindow {
                         id: squareButton
                         radius: 16
                         height: 32
-                        color: waveGroup.checkedButton === squareButton ? "#ECAAA7" : "#4C3837"
+                        color: sys.light
                         Layout.preferredWidth: 100
 
                         RowLayout {
@@ -240,7 +241,7 @@ ApplicationWindow {
                             Text {
                                 anchors.centerIn: parent
                                 text: "    Square"
-                                color: waveGroup.checkedButton === sineButton ? "#2A1818" : "#F8D6D5"
+                                color: sys.text
                                 font.pixelSize: 16
                                 font.family: "Inter"
                             }
@@ -257,7 +258,7 @@ ApplicationWindow {
                         id: sawButton
                         radius: 16
                         height: 32
-                        color: waveGroup.checkedButton === sawButton ? "#ECAAA7" : "#4C3837"
+                        color: sys.light
                         Layout.preferredWidth: 80
 
                         RowLayout {
@@ -270,7 +271,7 @@ ApplicationWindow {
                             Text {
                                 anchors.centerIn: parent
                                 text: "    Saw"
-                                color: waveGroup.checkedButton === sineButton ? "#2A1818" : "#F8D6D5"
+                                color: sys.text
                                 font.pixelSize: 16
                                 font.family: "Inter"
                             }
@@ -289,14 +290,14 @@ ApplicationWindow {
                     Layout.fillWidth: true
                     Layout.preferredHeight: 240
                     radius: 12
-                    color: "#1A1111"
-                    border.color: "#3a2a2a"
+                    color: sys.base
+                    border.color: sys.midlight
                     border.width: 1
 
                     Text {
                         anchors.centerIn: parent
                         text: "insert sine waves here"
-                        color: "#f8d0d0"
+                        color: sys.text
                     }
                 }
             }

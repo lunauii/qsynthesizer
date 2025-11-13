@@ -47,7 +47,7 @@ cmake_ninja_workdir = /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/De
 #############################################
 # Order-only phony target for appQSynthesizer
 
-build cmake_object_order_depends_target_appQSynthesizer: phony || .qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp .qt/rcc/qrc_appQSynthesizer_raw_res_0.cpp .qt/rcc/qrc_qmake_QSynthesizer.cpp .rcc/qmlcache/appQSynthesizer_Main_qml.cpp .rcc/qmlcache/appQSynthesizer_Main_qml.cpp.aotstats .rcc/qmlcache/appQSynthesizer_qmlcache_loader.cpp QSynthesizer/appQSynthesizer.qmltypes appQSynthesizer_autogen appQSynthesizer_autogen/mocs_compilation.cpp appQSynthesizer_autogen/timestamp appQSynthesizer_autogen_timestamp_deps appQSynthesizer_copy_qml appQSynthesizer_copy_res appQSynthesizer_qmlimportscan appqsynthesizer_qmltyperegistrations.cpp generate_qmlls_build_ini_file meta_types/appQSynthesizer_json_file_list.txt meta_types/appQSynthesizer_json_file_list.txt.timestamp meta_types/qt6appqsynthesizer_metatypes.json meta_types/qt6appqsynthesizer_metatypes.json.gen
+build cmake_object_order_depends_target_appQSynthesizer: phony || .qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp .qt/rcc/qrc_appQSynthesizer_raw_res_0.cpp .qt/rcc/qrc_qmake_QSynthesizer.cpp .rcc/qmlcache/appQSynthesizer_Main_qml.cpp .rcc/qmlcache/appQSynthesizer_Main_qml.cpp.aotstats .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.aotstats .rcc/qmlcache/appQSynthesizer_qmlcache_loader.cpp QSynthesizer/appQSynthesizer.qmltypes appQSynthesizer_autogen appQSynthesizer_autogen/mocs_compilation.cpp appQSynthesizer_autogen/timestamp appQSynthesizer_autogen_timestamp_deps appQSynthesizer_copy_qml appQSynthesizer_copy_res appQSynthesizer_qmlimportscan appqsynthesizer_qmltyperegistrations.cpp generate_qmlls_build_ini_file meta_types/appQSynthesizer_json_file_list.txt meta_types/appQSynthesizer_json_file_list.txt.timestamp meta_types/qt6appqsynthesizer_metatypes.json meta_types/qt6appqsynthesizer_metatypes.json.gen
 
 build CMakeFiles/appQSynthesizer.dir/appQSynthesizer_autogen/mocs_compilation.cpp.o: CXX_COMPILER__appQSynthesizer_unscanned_Debug /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/appQSynthesizer_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appQSynthesizer
   CONFIG = Debug
@@ -103,6 +103,15 @@ build CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache/appQSynth
   OBJECT_DIR = CMakeFiles/appQSynthesizer.dir
   OBJECT_FILE_DIR = CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache
 
+build CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.o: CXX_COMPILER__appQSynthesizer_unscanned_Debug /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp || cmake_object_order_depends_target_appQSynthesizer
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB
+  DEP_FILE = CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always -mno-direct-extern-access
+  INCLUDES = -I/home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/appQSynthesizer_autogen/include -I/home/lunaui/Documents/bcit/comp3931/QSynthesizer -isystem /usr/include/qt6/QtQml -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtQmlIntegration -isystem /usr/include/qt6/QtNetwork -isystem /usr/include/qt6/QtQuick -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtQmlMeta -isystem /usr/include/qt6/QtQmlModels -isystem /usr/include/qt6/QtQmlWorkerScript -isystem /usr/include/qt6/QtOpenGL
+  OBJECT_DIR = CMakeFiles/appQSynthesizer.dir
+  OBJECT_FILE_DIR = CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache
+
 build CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp.o: CXX_COMPILER__appQSynthesizer_unscanned_Debug /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp || cmake_object_order_depends_target_appQSynthesizer
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB
@@ -129,7 +138,7 @@ build CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.qt/rcc/qrc_appQSynthes
 #############################################
 # Link the executable appQSynthesizer
 
-build appQSynthesizer: CXX_EXECUTABLE_LINKER__appQSynthesizer_Debug CMakeFiles/appQSynthesizer.dir/appQSynthesizer_autogen/mocs_compilation.cpp.o CMakeFiles/appQSynthesizer.dir/main.cpp.o CMakeFiles/appQSynthesizer.dir/appqsynthesizer_qmltyperegistrations.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.qt/rcc/qrc_qmake_QSynthesizer.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache/appQSynthesizer_qmlcache_loader.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache/appQSynthesizer_Main_qml.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.qt/rcc/qrc_appQSynthesizer_raw_res_0.cpp.o | /usr/lib/libQt6Quick.so.6.10.0 /usr/lib/libQt6QmlMeta.so.6.10.0 /usr/lib/libQt6QmlWorkerScript.so.6.10.0 /usr/lib/libQt6QmlModels.so.6.10.0 /usr/lib/libQt6Qml.so.6.10.0 /usr/lib/libQt6Network.so.6.10.0 /usr/lib/libQt6OpenGL.so.6.10.0 /usr/lib/libQt6Gui.so.6.10.0 /usr/lib/libGLX.so /usr/lib/libOpenGL.so /usr/lib/libQt6Core.so.6.10.0 || appQSynthesizer_autogen appQSynthesizer_autogen_timestamp_deps appQSynthesizer_copy_qml appQSynthesizer_copy_res appQSynthesizer_qmlimportscan generate_qmlls_build_ini_file
+build appQSynthesizer: CXX_EXECUTABLE_LINKER__appQSynthesizer_Debug CMakeFiles/appQSynthesizer.dir/appQSynthesizer_autogen/mocs_compilation.cpp.o CMakeFiles/appQSynthesizer.dir/main.cpp.o CMakeFiles/appQSynthesizer.dir/appqsynthesizer_qmltyperegistrations.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.qt/rcc/qrc_qmake_QSynthesizer.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache/appQSynthesizer_qmlcache_loader.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache/appQSynthesizer_Main_qml.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp.o CMakeFiles/appQSynthesizer.dir/build/Desktop-Debug/.qt/rcc/qrc_appQSynthesizer_raw_res_0.cpp.o | /usr/lib/libQt6Quick.so.6.10.0 /usr/lib/libQt6QmlMeta.so.6.10.0 /usr/lib/libQt6QmlWorkerScript.so.6.10.0 /usr/lib/libQt6QmlModels.so.6.10.0 /usr/lib/libQt6Qml.so.6.10.0 /usr/lib/libQt6Network.so.6.10.0 /usr/lib/libQt6OpenGL.so.6.10.0 /usr/lib/libQt6Gui.so.6.10.0 /usr/lib/libGLX.so /usr/lib/libOpenGL.so /usr/lib/libQt6Core.so.6.10.0 || appQSynthesizer_autogen appQSynthesizer_autogen_timestamp_deps appQSynthesizer_copy_qml appQSynthesizer_copy_res appQSynthesizer_qmlimportscan generate_qmlls_build_ini_file
   CONFIG = Debug
   DEP_FILE = CMakeFiles/appQSynthesizer.dir/link.d
   FLAGS = -DQT_QML_DEBUG -g
@@ -211,13 +220,13 @@ build generate_qmlls_build_ini_file: phony CMakeFiles/generate_qmlls_build_ini_f
 #############################################
 # Utility command for module_appQSynthesizer_aotstats_target
 
-build module_appQSynthesizer_aotstats_target: phony CMakeFiles/module_appQSynthesizer_aotstats_target .rcc/qmlcache/module_appQSynthesizer.aotstats .rcc/qmlcache/appQSynthesizer_Main_qml.cpp .rcc/qmlcache/appQSynthesizer_Main_qml.cpp.aotstats appqsynthesizer_qmltyperegistrations.cpp QSynthesizer/appQSynthesizer.qmltypes appQSynthesizer_qmltyperegistration
+build module_appQSynthesizer_aotstats_target: phony CMakeFiles/module_appQSynthesizer_aotstats_target .rcc/qmlcache/module_appQSynthesizer.aotstats .rcc/qmlcache/appQSynthesizer_Main_qml.cpp .rcc/qmlcache/appQSynthesizer_Main_qml.cpp.aotstats .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.aotstats appqsynthesizer_qmltyperegistrations.cpp QSynthesizer/appQSynthesizer.qmltypes appQSynthesizer_qmltyperegistration
 
 
 #############################################
 # Utility command for all_aotstats
 
-build all_aotstats: phony CMakeFiles/all_aotstats .rcc/qmlcache/all_aotstats.aotstats .rcc/qmlcache/all_aotstats.txt .rcc/qmlcache/module_appQSynthesizer.aotstats .rcc/qmlcache/appQSynthesizer_Main_qml.cpp .rcc/qmlcache/appQSynthesizer_Main_qml.cpp.aotstats appqsynthesizer_qmltyperegistrations.cpp QSynthesizer/appQSynthesizer.qmltypes module_appQSynthesizer_aotstats_target
+build all_aotstats: phony CMakeFiles/all_aotstats .rcc/qmlcache/all_aotstats.aotstats .rcc/qmlcache/all_aotstats.txt .rcc/qmlcache/module_appQSynthesizer.aotstats .rcc/qmlcache/appQSynthesizer_Main_qml.cpp .rcc/qmlcache/appQSynthesizer_Main_qml.cpp.aotstats .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.aotstats appqsynthesizer_qmltyperegistrations.cpp QSynthesizer/appQSynthesizer.qmltypes module_appQSynthesizer_aotstats_target
 
 
 #############################################
@@ -350,9 +359,18 @@ build .rcc/qmlcache/appQSynthesizer_Main_qml.cpp .rcc/qmlcache/appQSynthesizer_M
 
 
 #############################################
+# Custom command for .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp
+
+build .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp ${cmake_ninja_workdir}.rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.aotstats: CUSTOM_COMMAND /usr/lib/qt6/qmlcachegen /home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml .qt/rcc/qmake_QSynthesizer.qrc .qt/rcc/appQSynthesizer_raw_qml_0.qrc .qt/rcc/appQSynthesizer_raw_res_0.qrc QSynthesizer/appQSynthesizer.qmltypes QSynthesizer/qmldir
+  COMMAND = cd /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug && /usr/bin/cmake -E make_directory /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.rcc/qmlcache && /usr/lib/qt6/qmlcachegen --bare --resource-path /qt/qml/QSynthesizer/colorTest.qml -I /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug -I /usr/lib/qt6/qml -i /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/QSynthesizer/qmldir --resource /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.qt/rcc/qmake_QSynthesizer.qrc --resource /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.qt/rcc/appQSynthesizer_raw_qml_0.qrc --resource /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.qt/rcc/appQSynthesizer_raw_res_0.qrc --dump-aot-stats "--module-id=QSynthesizer(appQSynthesizer)" -o /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp /home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml
+  DESC = Generating .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp, .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.aotstats
+  restat = 1
+
+
+#############################################
 # Custom command for .qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp: CUSTOM_COMMAND /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml .qt/rcc/appQSynthesizer_raw_qml_0.qrc /usr/lib/qt6/rcc || appQSynthesizer_autogen appQSynthesizer_autogen_timestamp_deps appQSynthesizer_copy_qml appQSynthesizer_copy_res appQSynthesizer_qmlimportscan generate_qmlls_build_ini_file
+build .qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp: CUSTOM_COMMAND /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml /home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml .qt/rcc/appQSynthesizer_raw_qml_0.qrc /usr/lib/qt6/rcc || appQSynthesizer_autogen appQSynthesizer_autogen_timestamp_deps appQSynthesizer_copy_qml appQSynthesizer_copy_res appQSynthesizer_qmlimportscan generate_qmlls_build_ini_file
   COMMAND = cd /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug && /usr/lib/qt6/rcc --output /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.qt/rcc/qrc_appQSynthesizer_raw_qml_0.cpp --name appQSynthesizer_raw_qml_0 /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.qt/rcc/appQSynthesizer_raw_qml_0.qrc
   DESC = Running rcc for resource appQSynthesizer_raw_qml_0
   restat = 1
@@ -396,21 +414,21 @@ build CMakeFiles/appQSynthesizer_qmltyperegistration | ${cmake_ninja_workdir}CMa
 #############################################
 # Custom command for CMakeFiles/appQSynthesizer_qmllint
 
-build CMakeFiles/appQSynthesizer_qmllint | ${cmake_ninja_workdir}CMakeFiles/appQSynthesizer_qmllint: CUSTOM_COMMAND /usr/lib/qt6/bin/qmllint /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml .rcc/qmllint/appQSynthesizer.rsp || all_qmltyperegistrations appQSynthesizer_qmltyperegistration
+build CMakeFiles/appQSynthesizer_qmllint | ${cmake_ninja_workdir}CMakeFiles/appQSynthesizer_qmllint: CUSTOM_COMMAND /usr/lib/qt6/bin/qmllint /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml /home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml .rcc/qmllint/appQSynthesizer.rsp || all_qmltyperegistrations appQSynthesizer_qmltyperegistration
   COMMAND = cd /home/lunaui/Documents/bcit/comp3931/QSynthesizer && /usr/lib/qt6/bin/qmllint @/home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.rcc/qmllint/appQSynthesizer.rsp
 
 
 #############################################
 # Custom command for CMakeFiles/appQSynthesizer_qmllint_json
 
-build CMakeFiles/appQSynthesizer_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appQSynthesizer_qmllint_json: CUSTOM_COMMAND /usr/lib/qt6/bin/qmllint /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml .rcc/qmllint/appQSynthesizer_json.rsp || all_qmltyperegistrations appQSynthesizer_qmltyperegistration
+build CMakeFiles/appQSynthesizer_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appQSynthesizer_qmllint_json: CUSTOM_COMMAND /usr/lib/qt6/bin/qmllint /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml /home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml .rcc/qmllint/appQSynthesizer_json.rsp || all_qmltyperegistrations appQSynthesizer_qmltyperegistration
   COMMAND = cd /home/lunaui/Documents/bcit/comp3931/QSynthesizer && /usr/lib/qt6/bin/qmllint @/home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.rcc/qmllint/appQSynthesizer_json.rsp
 
 
 #############################################
 # Custom command for CMakeFiles/appQSynthesizer_qmllint_module
 
-build CMakeFiles/appQSynthesizer_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appQSynthesizer_qmllint_module: CUSTOM_COMMAND /usr/lib/qt6/bin/qmllint /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml .rcc/qmllint/appQSynthesizer_module.rsp || all_qmltyperegistrations appQSynthesizer_qmltyperegistration
+build CMakeFiles/appQSynthesizer_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appQSynthesizer_qmllint_module: CUSTOM_COMMAND /usr/lib/qt6/bin/qmllint /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml /home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml .rcc/qmllint/appQSynthesizer_module.rsp || all_qmltyperegistrations appQSynthesizer_qmltyperegistration
   COMMAND = cd /home/lunaui/Documents/bcit/comp3931/QSynthesizer && /usr/lib/qt6/bin/qmllint @/home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.rcc/qmllint/appQSynthesizer_module.rsp
 
 
@@ -423,7 +441,7 @@ build CMakeFiles/appQSynthesizer_copy_qml | ${cmake_ninja_workdir}CMakeFiles/app
 #############################################
 # Custom command for .qt/appQSynthesizer_qml.txt
 
-build .qt/appQSynthesizer_qml.txt | ${cmake_ninja_workdir}.qt/appQSynthesizer_qml.txt: CUSTOM_COMMAND /usr/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml
+build .qt/appQSynthesizer_qml.txt | ${cmake_ninja_workdir}.qt/appQSynthesizer_qml.txt: CUSTOM_COMMAND /usr/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml /home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml
   COMMAND = cd /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug && /usr/bin/cmake -DFILES_INFO_PATH=/home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.qt/appQSynthesizer_qml.cmake -P /usr/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
   DESC = Copying appQSynthesizer qml sources into build dir
   restat = 1
@@ -468,7 +486,7 @@ build CMakeFiles/module_appQSynthesizer_aotstats_target | ${cmake_ninja_workdir}
 #############################################
 # Custom command for .rcc/qmlcache/module_appQSynthesizer.aotstats
 
-build .rcc/qmlcache/module_appQSynthesizer.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_appQSynthesizer.aotstats: CUSTOM_COMMAND .rcc/qmlcache/appQSynthesizer_Main_qml.cpp.aotstats .rcc/qmlcache/module_appQSynthesizer.aotstatslist || appQSynthesizer_qmltyperegistration
+build .rcc/qmlcache/module_appQSynthesizer.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_appQSynthesizer.aotstats: CUSTOM_COMMAND .rcc/qmlcache/appQSynthesizer_Main_qml.cpp.aotstats .rcc/qmlcache/appQSynthesizer_colorTest_qml.cpp.aotstats .rcc/qmlcache/module_appQSynthesizer.aotstatslist || appQSynthesizer_qmltyperegistration
   COMMAND = cd /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug && /usr/lib/qt6/qmlaotstats aggregate /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.rcc/qmlcache/module_appQSynthesizer.aotstatslist /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.rcc/qmlcache/module_appQSynthesizer.aotstats
   DESC = Generating .rcc/qmlcache/module_appQSynthesizer.aotstats
   restat = 1
@@ -499,7 +517,7 @@ build CMakeFiles/appQSynthesizer_qmlimportscan | ${cmake_ninja_workdir}CMakeFile
 #############################################
 # Custom command for .qt/qml_imports/appQSynthesizer_build.cmake
 
-build .qt/qml_imports/appQSynthesizer_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appQSynthesizer_build.cmake: CUSTOM_COMMAND /usr/lib/qt6/qmlimportscanner .qt/rcc/qmake_QSynthesizer.qrc .qt/rcc/appQSynthesizer_raw_qml_0.qrc .qt/rcc/appQSynthesizer_raw_res_0.qrc /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml
+build .qt/qml_imports/appQSynthesizer_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appQSynthesizer_build.cmake: CUSTOM_COMMAND /usr/lib/qt6/qmlimportscanner .qt/rcc/qmake_QSynthesizer.qrc .qt/rcc/appQSynthesizer_raw_qml_0.qrc .qt/rcc/appQSynthesizer_raw_res_0.qrc /home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml /home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml
   COMMAND = cd /home/lunaui/Documents/bcit/comp3931/QSynthesizer && /usr/lib/qt6/qmlimportscanner @/home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/.qt/qml_imports/appQSynthesizer_build.rsp
   DESC = Running qmlimportscanner for appQSynthesizer
   restat = 1

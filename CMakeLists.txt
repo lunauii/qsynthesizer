@@ -23,6 +23,10 @@ qt_add_qml_module(appQSynthesizer
         RESOURCES assets/svg/cube.svg assets/svg/folder.svg assets/svg/gear.svg assets/svg/plus.svg assets/svg/saw.svg assets/svg/sine.svg assets/svg/square.svg
         RESOURCES
         RESOURCES assets/fonts/boxicons.ttf
+        QML_FILES colorTest.qml
+        RESOURCES
+        RESOURCES
+        RESOURCES
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

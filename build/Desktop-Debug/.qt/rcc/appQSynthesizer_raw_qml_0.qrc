@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="/qt/qml/QSynthesizer/">
     <file alias="Main.qml">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml</file>
+    <file alias="colorTest.qml">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/colorTest.qml</file>
   </qresource>
 </RCC>
 
