@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_appQSynthesizer_FILE /home/lunaui/Documents/bcit/comp3931/QSynthesizer/build/Desktop-Debug/appQSynthesizer)
-set(__QT_DEPLOY_TARGET_appQSynthesizer_TYPE EXECUTABLE)
