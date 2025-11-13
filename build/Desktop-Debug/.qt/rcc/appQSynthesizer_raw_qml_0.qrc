@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/QSynthesizer/">
-    <file alias="Main.qml">/home/lunaui/Documents/bcit/comp3931/QSynthesizer/Main.qml</file>
-  </qresource>
-</RCC>
-
