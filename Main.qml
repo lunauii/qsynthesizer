@@ -1,17 +1,28 @@
 import QtQuick 2.15
+import QtCore
 import QtQuick.Controls
+import QtQuick.Dialogs
 import QtQuick.Layouts
 import QtQuick.VectorImage
 
 ApplicationWindow {
-    width: 1000
-    height: 700
+    maximumWidth: 960
+    maximumHeight: 720
+    minimumWidth: 960
+    minimumHeight: 720
     visible: true
     color: "#1A1111"
     title: "QSynthesizer"
 
     FontLoader { id: boxicons; source: "assets/fonts/boxicons.ttf" }
     SystemPalette { id: sys; colorGroup: SystemPalette.Active }
+    FileDialog {
+        id: fileDialog
+        nameFilters: ["Audio files (*.wav)"]
+        currentFolder: StandardPaths.standardLocations(StandardPaths.MusicLocation)[0]
+        // TODO route this file path to swsmodel function and play audio on complete
+        onAccepted: fileName.text = selectedFile
+    }
 
     GridLayout {
         anchors.fill: parent
@@ -83,7 +94,7 @@ ApplicationWindow {
                 Rectangle {
                     Layout.alignment: Qt.AlignTop
                     width: 48; height: 48; radius: 12
-                    color: sys.highlightedText
+                    color: sys.light
                     Text {
                         anchors.centerIn: parent
                         text: "+"
@@ -93,22 +104,7 @@ ApplicationWindow {
                     MouseArea {
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
-                    }
-                }
-                Rectangle {
-                    width: 48; height: 48; radius: 12
-                    color: sys.base
-                    Layout.alignment: Qt.AlignTop
-                    Text {
-                        anchors.centerIn: parent
-                        font.pixelSize: 32
-                        font.family: boxicons.font.family
-                        text: "\uEDCB"
-                        color: sys.windowText
-                    }
-                    MouseArea {
-                        anchors.fill: parent
-                        cursorShape: Qt.PointingHandCursor
+                        onClicked: fileDialog.open()
                     }
                 }
 
@@ -127,10 +123,11 @@ ApplicationWindow {
                         color: sys.windowText
                         font.pixelSize: 32
                     }
-                }
-                MouseArea {
-                    anchors.fill: parent
-                    cursorShape: Qt.PointingHandCursor
+
+                    MouseArea {
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+                    }
                 }
             }
         }
@@ -142,7 +139,7 @@ ApplicationWindow {
             Layout.fillWidth: true
             Layout.fillHeight: true
             color: sys.mid
-            radius: 16
+            // radius: 16
             antialiasing: true
             clip: true
 
@@ -164,8 +161,9 @@ ApplicationWindow {
                     }
 
                     Text {
+                        id: fileName
                         anchors.centerIn: parent
-                        text: "waveform or something"
+                        text: "Select a File!"
                         color: sys.text
                     }
                 }
@@ -225,52 +223,23 @@ ApplicationWindow {
                     }
 
                     Rectangle {
-                        id: squareButton
+                        id: waveformButton
                         radius: 16
                         height: 32
                         color: sys.light
-                        Layout.preferredWidth: 100
+                        Layout.preferredWidth: 130
 
                         RowLayout {
                             VectorImage {
                                 preferredRendererType: VectorImage.CurveRenderer
-                                source: "assets/svg/square.svg"
-                                scale: 0.7
-                            }
-
-                            Text {
-                                anchors.centerIn: parent
-                                text: "    Square"
-                                color: sys.text
-                                font.pixelSize: 16
-                                font.family: "Inter"
-                            }
-                        }
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: waveGroup.checkedButton = squareButton
-                            cursorShape: Qt.PointingHandCursor
-                        }
-                    }
-
-                    Rectangle {
-                        id: sawButton
-                        radius: 16
-                        height: 32
-                        color: sys.light
-                        Layout.preferredWidth: 80
-
-                        RowLayout {
-                            VectorImage {
-                                preferredRendererType: VectorImage.CurveRenderer
+                                // TODO change this to the waveform svg
                                 source: "assets/svg/saw.svg"
                                 scale: 0.7
                             }
 
                             Text {
                                 anchors.centerIn: parent
-                                text: "    Saw"
+                                text: "    WaveForm"
                                 color: sys.text
                                 font.pixelSize: 16
                                 font.family: "Inter"
@@ -296,7 +265,7 @@ ApplicationWindow {
 
                     Text {
                         anchors.centerIn: parent
-                        text: "insert sine waves here"
+                        text: "Waveform Visualization Will Appear Here"
                         color: sys.text
                     }
                 }
