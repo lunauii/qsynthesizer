@@ -2,7 +2,6 @@ import QtQuick 2.15
 import QtQuick.Controls
 import QtQuick.Layouts
 import QtQuick.VectorImage
-import QtQuick.Dialogs
 
 ApplicationWindow {
     width: 1000
@@ -94,11 +93,6 @@ ApplicationWindow {
                     MouseArea {
                         anchors.fill: parent
                         cursorShape: Qt.PointingHandCursor
-                        onClicked: fileDialog.open()
-                    }
-                    FileDialog {
-                            id: fileDialog
-                            currentFolder: StandardPaths.standardLocations(StandardPaths.PicturesLocation)[0]
                     }
                 }
                 Rectangle {
