@@ -4,6 +4,7 @@ import QtQuick.Controls
 import QtQuick.Dialogs
 import QtQuick.Layouts
 import QtQuick.VectorImage
+import QtMultimedia
 
 ApplicationWindow {
     maximumWidth: 960
@@ -21,7 +22,7 @@ ApplicationWindow {
         nameFilters: ["Audio files (*.wav)"]
         currentFolder: StandardPaths.standardLocations(StandardPaths.MusicLocation)[0]
         // TODO route this file path to swsmodel function and play audio on complete
-        onAccepted: fileName.text = selectedFile
+        onAccepted: playMusic.source = selectedFile
     }
 
     GridLayout {
@@ -163,8 +164,17 @@ ApplicationWindow {
                     Text {
                         id: fileName
                         anchors.centerIn: parent
-                        text: "Select a File!"
+                        text: playMusic.source
                         color: sys.text
+                    }
+
+                    MediaPlayer {
+                        id: playMusic
+                        audioOutput: AudioOutput {}
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        onPressed: { playMusic.play() }
                     }
                 }
 
