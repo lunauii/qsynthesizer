@@ -17,12 +17,18 @@ ApplicationWindow {
 
     FontLoader { id: boxicons; source: "assets/fonts/boxicons.ttf" }
     SystemPalette { id: sys; colorGroup: SystemPalette.Active }
+
     FileDialog {
         id: fileDialog
         nameFilters: ["Audio files (*.wav)"]
         currentFolder: StandardPaths.standardLocations(StandardPaths.MusicLocation)[0]
         // TODO route this file path to swsmodel function and play audio on complete
         onAccepted: playMusic.source = selectedFile
+    }
+
+    MediaPlayer {
+        id: playMusic
+        audioOutput: AudioOutput {}
     }
 
     GridLayout {
@@ -168,10 +174,6 @@ ApplicationWindow {
                         color: sys.text
                     }
 
-                    MediaPlayer {
-                        id: playMusic
-                        audioOutput: AudioOutput {}
-                    }
                     MouseArea {
                         anchors.fill: parent
                         onPressed: { playMusic.play() }
@@ -277,6 +279,16 @@ ApplicationWindow {
                         anchors.centerIn: parent
                         text: "Waveform Visualization Will Appear Here"
                         color: sys.text
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onPressed: {
+                            // make sure that when we write the output file
+                            // from the SWS, we write to this file.
+                            playMusic.source = "assets/output/output.wav"
+                            playMusic.play()
+                        }
                     }
                 }
             }

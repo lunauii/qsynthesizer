@@ -18,7 +18,7 @@ qt_add_qml_module(appQSynthesizer
     QML_FILES
         Main.qml
         RESOURCES
-        RESOURCES
+        RESOURCES assets/output/output.wav
         RESOURCES
         RESOURCES assets/svg/cube.svg assets/svg/folder.svg assets/svg/gear.svg assets/svg/plus.svg assets/svg/saw.svg assets/svg/sine.svg assets/svg/square.svg
         RESOURCES
