@@ -6,7 +6,7 @@ Qt GUI code can be found in the root of the repo, and the MATLAB code used to te
 
 `sinewavesynth.m` is the main file to run to run the project.
 
-An example file called `horse.wav` is included and it taken from https://www.voiptroubleshooter.com/open_speech/american.html
+An example file called `horse.wav` is included and is taken from https://www.voiptroubleshooter.com/open_speech/american.html
 
 A note for using other files, they must:
 - be in the .wav format.
